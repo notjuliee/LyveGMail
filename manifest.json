@@ -1,0 +1,19 @@
+{
+  "name": "LyveGMail",
+  "version": "0.2",
+  "description": "Send photos via email!",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "css": ["jquery-ui.min.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    "jquery-1.11.3.min.js",
+    "gmail.js",
+    "main.js",
+    "jquery-ui.min.js"
+  ],
+  "manifest_version": 2
+}
